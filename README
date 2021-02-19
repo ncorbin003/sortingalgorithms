@@ -1,0 +1,24 @@
+Nicola Corbin
+1709990
+
+To compile make sure you have all of my files in the same folder.
+This includes all of the header files:
+nicolacorbin_selectionsort.h, nicolacorbin_bubblesort.h, nicolacorbin_insertionsort.h, nicolacorbin_mergesort.h,
+nicolacorbin_quicksort.h, and nicolacorbin_heapsort.h
+
+As well as the main file nicolacorbin_main.cpp. You should have my executable file included as well.
+
+In the terminal make sure you are in the folder "nicolacorbin_code" with my files.
+
+COPY (or type): g++ nicolacorbin_main.cpp -o nicolacorbin_main
+
+PASTE it in the command line terminal and press enter
+
+It should have created an executable file nicolacorbin_main
+
+Type in: ./nicolacorbin_main in the command line and press enter.
+
+This should execute the program.
+
+
+

@@ -1,0 +1,81 @@
+In this assignment, you will code for different sorting algorithms that we learned and experimentally compare their
+efficiencies.
+
+1. Write six functions to code for the following six sorting algorithms in C++. Make your own header files to declare
+all the functions you need to implement each of these sorting algorithms. For example, for quicksort, you will have a
+ header file such as "quicksort.h", in which you will declare all the functions that you need to perform quicksort.
+ Then you will include these header files in your main cpp program, in which you will implement and call all these
+ functions. The input to all these sorts is the array of unsorted integers, the size of the array, and if required the
+ start and end variables. The output of each of these sorts is the sorted array of integers printed on the console. Test
+  these sorts with the unsorted array - A [89, 373, 1, 783, 23, 987, 12, 65, 28, 17].
+
+      a. Selection Sort (DONE)
+
+      b. Bubble Sort (DONE)
+
+      c. Insertion Sort (DONE)
+
+      d. Merge Sort (DONE)
+
+      e. Quick Sort (DONE)
+
+      f. Heap Sort (DONE)
+
+
+
+2. Write a function to generate 10 unique dataset files of unsorted integers separated by a comma ",". E.g., 34, 32421,
+124124, 67, 92, ... The sizes of these 10 datasets are (n) - 1000, 4000, 8000, 10000, 40000, 80000, 100000, 400000,
+800000, 1000000. Generate random integers between 0 to 1,000,000 as the elements of each dataset. This function does
+not take any input arguments. This function generates and saves 10 ".txt" files. The output of this function is just a
+print statement to console that file generation completed. (DONE)
+
+3. Write a function to read the data from the above-generated files and construct 10 unsorted arrays. This function does
+not take any input arguments. This function declares 10 arrays of sizes sufficient to store the content of the above-generated
+files and constructs these arrays by reading these files. The output of this function is just a print statement to console
+ that unsorted array generation completed. (DONE)
+
+4. Use the above-generated 10 arrays to give as the input to your six sorting functions and measure the duration of each
+function. Comment the statements you used to print the sorted array after each sorting function, as you need to measure
+only the time taken to sort. The output of each sort is the time taken in milliseconds to sort the given unsorted array.
+You can use "#include <chrono>" or "#include<time.h>" to measure the duration of a function in C++. While measuring the
+time you only need to measure the time taken by each sorting algorithm to convert the unsorted array into a sorted array.
+Note: The additional time taken, such as to construct your input unsorted array and to print your sorted array to console
+should not be included while measuring the duration of the sort. (DONE)
+
+
+5. Repeat the above duration measurement of each sort 3 times to calculate the average duration of each sort for each
+array. Plot a graph for the duration of different sorting algorithms including Selection Sort, Bubble Sort, Insertion Sort,
+Quick Sort, Merge Sort, and Heap Sort. The x-axis of the graph will be the dataset size (n) (i.e., same as your array size),
+and the y-axis will be the average of the three executions for each dataset size. Thus, your x-axis will have ten labels and
+value of runtime on the y-axis for each label. Draw the above-described dataset size to runtime curve for the six sorting
+algorithms (Selection Sort, Bubble Sort, Insertion Sort, Quick Sort, Merge Sort, and Heap Sort) in the same graph sharing
+the same axis labels. Add Legend entry for each curve on the graph and use a different pattern like dotted, dashed,
+straight line, and different bullet dimensions and color for each curve of a sorting algorithm. Note: You have to
+ generate datasets (i.e., unsorted arrays) only once and you can reuse the same datasets across three executions of
+ each sort and also across different sorting algorithms.
+
+
+
+Submit the PDF with your name, the image of the graph, and your pointwise explanations of your observations from
+everything you do in this assignment and the results you observe. You should also submit an additional zip folder within
+ which you need to have all your code files,  README file with the compile and execution instructions, and your pre-compiled
+  ".exe" executable files. On top of all the files, you need to mention your name as comments. All submitted PDF files
+  must be named as "<your-name>_<assignment-name>.pdf". For example, it will be "jankibhimani_sorting.pdf" for
+  Prof. Janki Bhimani. You need to submit the single main file that implements all the above functions and is named as
+  "<your-name>_sort.cpp". All submitted code header files must be named as "<your-name>_<sort-name>". For example,
+  "jankibhimani_quicksort.h". The zip folder containing all the files except PDF should be named as "<your-name>_code.zip".
+   For example, it will be "jankibhimani_code.zip".
+
+Please follow the “Guidelines for Software Engineering Techniques.pdf” and “Assignments and Project Style and Documentation
+ Guidelines.pdf” made available to you in your Student Resources module for other document editing and code format guidelines.
+
+
+
+IF YOU ARE RUNNING ON A MAC:
+
+COPY: g++ -std=c++11 -std=c++2a -stdlib=libc++ nicolacorbin_main.cpp -o nicolacorbin_main
+
+PASTE it in the command line in the terminal and press enter.
+
+The extra arguments before the main file are to add extensions c++11, c++2a and reimpliments the
+standard library when compiling.
